@@ -1,10 +1,15 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import IntroCard from './components/IntroCard';
+import ButtonAppBar from './components/Navbar';
+// import useScreenSize from './useScreenSize';
 
 function App() {
+
+  // const screenSize = useScreenSize();
   return (
     <>
-    <Navbar/>
+    <ButtonAppBar/>
+    <IntroCard/>
     </>
   )
 
