@@ -48,7 +48,7 @@ const IntroCard = () => {
                   href="#projects"
                   variant="contained"
                   sx={{
-                     backgroundColor: "#003366",
+                     backgroundColor: "#0032C7",
                      p: 1.5,
                      margin: 2,
                      textTransform: 'capitalize',
@@ -61,7 +61,7 @@ const IntroCard = () => {
                      color: "#ffffff",
                      transition: "all 0.3s ease-in-out",
                      '&:hover': {
-                        backgroundColor: "#0e4882",
+                        backgroundColor: "#003DF5",
                         color: "#f0f0f0",
                         boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
                         transform: "scale(1.05)",
