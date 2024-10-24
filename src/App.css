@@ -87,6 +87,11 @@
   padding-right: 40px;
 }
 
+.intro-button-icon {
+  transform: scale(1.6);
+  padding-right: 8px;
+}
+
 
 @media (max-width: 768px) {
   .nav-bar {
