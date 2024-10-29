@@ -1,20 +1,21 @@
 import './App.css';
-import IntroCard from './components/IntroCard';
-import ButtonAppBar from './components/Navbar';
+import Home from './components/Home';
 import TechStack from './components/TechStack';
+import Navbar from './components/Navbar';
+import { Route, Routes } from 'react-router-dom'
 // import useScreenSize from './useScreenSize';
 
 function App() {
 
-  // const screenSize = useScreenSize();
   return (
     <>
-    <ButtonAppBar/>
-    <IntroCard/>
-    <TechStack/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/skills" element={<TechStack />} />
+      </Routes>
     </>
   )
-
 }
 
 export default App;

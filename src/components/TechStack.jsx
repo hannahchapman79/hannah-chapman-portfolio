@@ -3,18 +3,26 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
+import FadeInSection from './FadeInSection';
+
 
 const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(3),
     textAlign: 'center',
     color: '#fff',
-    height: 150,
-    width: 150,
+    maxHeight: 120,
+    maxWidth: 120,
+    width: '100%',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: 'transparent',
+    borderRadius: '8px',
+    transition: 'transform 0.2s',
+    '&:hover': {
+        transform: 'scale(1.04)',
+    },
 }));
 
 const languageTechStack = [
@@ -38,7 +46,7 @@ const webTechstack = [
 const backendTechstack = [
     { id: 1, logo: '/assets/nodejs-logo.png', name: 'Node.js' },
     { id: 2, logo: '/assets/express-logo-white.png', name: 'Express' },
-    { id: 3, logo: '/assets/typescript-logo.png', name: 'PSQL' },
+    { id: 3, logo: '/assets/psql-logo.png', name: 'PSQL' },
     { id: 4, logo: '/assets/restapi-logo.png', name: 'RESTful API Design' },
 ];
 
@@ -52,73 +60,93 @@ const toolsTechstack = [
 
 const TechStack = () => {
     return (
+        <>
         <section className='tech-stack-section'>
-            <h1>My tech stack</h1>
-            <h1>Programming Languages:</h1>
-            <Box className='languages-box' sx={{ flexGrow: 1 }}>
-                <Grid container spacing={5} justifyContent="center" >
-                    {languageTechStack.map((tech) => (
-                        <Grid item xs={4} key={tech.id} >
-                            <Item>
-                                <img src={tech.logo} alt={tech.name} style={{ maxHeight: '130px' }} />
-                                <p>{tech.name}</p>
-                            </Item>
+            <FadeInSection>
+                <h1 className='developer-toolkit'>My Developer Toolkit</h1>
+            </FadeInSection>
+            <Grid container spacing={3} justifyContent="center">
+                <FadeInSection>
+                    <Box className='languages-box' >
+                        <h1 style={{justifyItems: 'center'}}>Programming Languages:</h1>
+                        <Grid container spacing={2} justifyContent="center">
+                            {languageTechStack.map((tech) => (
+                                <Grid item xs={4} key={tech.id}>
+                                    <Item>
+                                        <img src={tech.logo} alt={tech.name} style={{ maxHeight: '100px' }} />
+                                        <p>{tech.name}</p>
+                                    </Item>
+                                </Grid>
+                            ))}
                         </Grid>
-                    ))}
-                </Grid>
-            </Box>
-            <h1>Frontend Technologies:</h1>
-            <Box className='frontend-box' sx={{ flexGrow: 1 }}>
-                <Grid container spacing={5} justifyContent="center" >
-                    {frontendTechstack.map((tech) => (
-                        <Grid item xs={4} key={tech.id} >
-                            <Item>
-                                <img src={tech.logo} alt={tech.name} style={{ maxHeight: '130px' }} />
-                                <p>{tech.name}</p>
-                            </Item>
+                    </Box>
+                </FadeInSection>
+                <FadeInSection>
+                    <Box className='backend-box' sx={{ flexGrow: 1 }}>
+                        <h1>Backend Technologies:</h1>
+                        <Grid container spacing={2} justifyContent="center">
+                            {backendTechstack.map((tech) => (
+                                <Grid item xs={4} key={tech.id}>
+                                    <Item>
+                                        <img src={tech.logo} alt={tech.name} style={{ maxHeight: '100px' }} />
+                                        <p>{tech.name}</p>
+                                    </Item>
+                                </Grid>
+                            ))}
                         </Grid>
-                    ))}
-                </Grid>
-            </Box>
-            <Box className='web-box' sx={{ flexGrow: 1 }}>
-                <Grid container spacing={5} justifyContent="center" >
-                    {webTechstack.map((tech) => (
-                        <Grid item xs={4} key={tech.id} >
-                            <Item>
-                                <img src={tech.logo} alt={tech.name} style={{ maxHeight: '130px' }} />
-                                <p>{tech.name}</p>
-                            </Item>
+                    </Box>
+                </FadeInSection>
+                <FadeInSection>
+
+                    <Box className='frontend-box' sx={{ flexGrow: 1 }} >
+                        <h1>Frontend Technologies:</h1>
+                        <Grid container spacing={2} justifyContent="center">
+                            {frontendTechstack.map((tech) => (
+                                <Grid item xs={4} key={tech.id}>
+                                    <Item>
+                                        <img src={tech.logo} alt={tech.name} style={{ maxHeight: '100px' }} />
+                                        <p>{tech.name}</p>
+                                    </Item>
+                                </Grid>
+                            ))}
                         </Grid>
-                    ))}
-                </Grid>
-            </Box>
-            <h1>Backend Technologies:</h1>
-            <Box className='backend-box' sx={{ flexGrow: 1 }}>
-                <Grid container spacing={5} justifyContent="center" >
-                    {backendTechstack.map((tech) => (
-                        <Grid item xs={4} key={tech.id} >
-                            <Item>
-                                <img src={tech.logo} alt={tech.name} style={{ maxHeight: '130px' }} />
-                                <p>{tech.name}</p>
-                            </Item>
+                    </Box>
+                </FadeInSection>
+                <FadeInSection>
+
+                    <Box className='web-box' sx={{ flexGrow: 1 }}>
+                        <h1>Web Technologies:</h1>
+                        <Grid container spacing={2} justifyContent="center">
+                            {webTechstack.map((tech) => (
+                                <Grid item xs={4} key={tech.id}>
+                                    <Item>
+                                        <img src={tech.logo} alt={tech.name} style={{ maxHeight: '100px' }} />
+                                        <p>{tech.name}</p>
+                                    </Item>
+                                </Grid>
+                            ))}
                         </Grid>
-                    ))}
-                </Grid>
-            </Box>
-            <h1>Tools and Testing:</h1>
-            <Box className='tools-box' sx={{ flexGrow: 1 }}>
-                <Grid container spacing={5} justifyContent="center" >
-                    {toolsTechstack.map((tech) => (
-                        <Grid item xs={4} key={tech.id} >
-                            <Item>
-                                <img src={tech.logo} alt={tech.name} style={{ maxHeight: '130px' }} />
-                                <p>{tech.name}</p>
-                            </Item>
+                    </Box>
+                </FadeInSection>
+                <FadeInSection>
+
+                    <Box className='tools-box' sx={{ flexGrow: 1 }}>
+                        <h1>Tools and Testing:</h1>
+                        <Grid container spacing={2} justifyContent="center">
+                            {toolsTechstack.map((tech) => (
+                                <Grid item xs={4} key={tech.id}>
+                                    <Item>
+                                        <img src={tech.logo} alt={tech.name} style={{ maxHeight: '100px' }} />
+                                        <p>{tech.name}</p>
+                                    </Item>
+                                </Grid>
+                            ))}
                         </Grid>
-                    ))}
-                </Grid>
-            </Box>
+                    </Box>
+                </FadeInSection>
+            </Grid>
         </section>
+        </>
     );
 };
 

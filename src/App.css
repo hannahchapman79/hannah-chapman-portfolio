@@ -40,7 +40,7 @@
 .nav-bar a:hover {
   color: #ffda79;
   transform: scale(1.1);
-  border-bottom: 2px solid #ffda79; 
+  border-bottom: 2px solid #ffda79;
 }
 
 .nav-bar a:focus {
@@ -51,18 +51,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; 
+  min-height: 80vh;
   margin: 0 auto;
 }
 
 .intro-card {
-  width: 100%; 
+  width: 100%;
   max-width: 60vw;
-  padding: 20px ;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .hannah-icon {
@@ -86,7 +86,7 @@
 }
 
 .contact-button {
-  background-color: #64717d; 
+  background-color: #64717d;
   color: white;
   padding-right: 40px;
 }
@@ -96,14 +96,38 @@
   padding-right: 8px;
 }
 
+.developer-toolkit {
+  font-size: 2.5rem;
+  margin: 40px;
+}
+
+.languages-box {
+  max-width: 35vw;
+  margin-right: 30px;
+}
+
+.tech-stack-section {
+  max-width: 90vw;
+}
+
+.backend-box:hover, 
+.frontend-box:hover, 
+.web-box:hover, 
+.tools-box:hover,
+.languages-box:hover {
+  box-shadow: 0px 5px 14px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+
 
 @media (max-width: 768px) {
   .nav-bar {
-    max-width: 90vw; 
+    max-width: 90vw;
   }
 
   .intro-card {
-    max-width: 90vw; 
+    max-width: 90vw;
     padding: 15px;
   }
 }
