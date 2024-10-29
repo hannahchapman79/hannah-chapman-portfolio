@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const IntroCard = () => {
+const Home = () => {
    return (
       <div className='intro-card-div'>
          <section className='intro-card'>
@@ -78,4 +78,4 @@ const IntroCard = () => {
    );
 };
 
-export default IntroCard;
+export default Home;
