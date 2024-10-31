@@ -6,6 +6,7 @@ import About from './components/about/About';
 import ProjectsGrid from "./components/projects/ProjectsGrid"
 import Cv from './components/Cv/Cv';
 import Contact from './components/contact/Contact';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/cv" element={<Cv />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </>
   )
 }
