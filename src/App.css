@@ -139,6 +139,21 @@ nav ul {
   transition: color 0.3s ease;
 }
 
+
+/* CV PAGE */
+
+.purple-button {
+  background-color: #5a189a !important;
+  border: #5a189a !important;
+}
+
+.purple-button:hover {
+  background-color: #7A21D4 !important;
+  color: #ffffff !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
 /* RESPONSIVE STYLING */
 
 @media (max-width: 768px) {
