@@ -17,7 +17,7 @@ function Projects() {
                         <ProjectCard
                             imgPath="/assets/clearskies.png"
                             title="Clear Skies Weather App"
-                            description="Clear Skies is a mobile app built with Flutter and Dart, designed to strengthen OOP skills. It fetches real-time weather data for any city, dynamically adjusting colors and icons based on current conditions for an engaging user experience."
+                            description="Clear Skies is a mobile app built with Flutter and Dart, designed to strengthen OOP skills. It fetches real-time weather data for any city, dynamically adjusting colours and icons based on current conditions for an engaging user experience."
                             ghLink="https://github.com/hannahchapman79/Clear-Skies-Weather-App"
                             demoLink="https://drive.google.com/file/d/1ae1AzyVsOoVHljPtHj8L2Hk7fjC0QbeS/view?usp=sharing"
                         />
