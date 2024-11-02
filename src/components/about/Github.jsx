@@ -22,19 +22,21 @@ function Github() {
   };
 
   return (
+    <section className="github-contribution">
     <Row style={{ justifyContent: "center", paddingTop: "40px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
+        Days I <strong>Code</strong>
       </h1>
       <GitHubCalendar
         username="hannahchapman79"
         transformData={selectLastHalfYear}
         blockSize={18}
         blockMargin={15}
-        color="#a65df0"
+        color="#CC66FF"
         fontSize={16}
       />
     </Row>
+    </section>
   );
 }
 

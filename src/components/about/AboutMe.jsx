@@ -2,12 +2,15 @@
 
 const AboutMe = () => {
     return (
-      <section className="about-me-section" id="about-me">
-        <h2 className="about-title">About Me</h2>
-        <p className="about-content">Hello! I'm <strong>Hannah Chapman</strong>, a junior developer from the UK, with a unique background in e-commerce and a keen passion for software development.</p>
-        <p>I started my career working with digital tools to drive sales and engagement across industries, and that experience has given me a firsthand look at the power of code to transform business results and user experiences. Recently, I completed an intensive JavaScript boot camp at Northcoders, where I strengthened my skills in both back-end and front-end development through exciting projects like an AI-powered plant identifier and a weather app.</p>
-        <p>When I&apos;m not coding, you&apos;ll find me practicing yoga and pilates, traveling to discover new places and cuisines, or volunteering for causes I care about. Whether it&apos;s teaching English abroad or helping run a lively hostel, I love staying connected to communities around the world.</p>
+      <section className="about-me-content">
+      <section className="about-me-text" id="about-me">
+        <h2 className="about-title">About Me, I'm <span>Hannah Chapman</span></h2>
+        <p>I&apos;m from Leicester, UK and have over 4 years of <span>e-commerce</span> experience, which I&apos;ve balanced alongside a part-time <span>business management degree.</span> This combination has given me a well-rounded understanding of both business strategy and how technology can make a real difference.
+         </p> <p>Recently, I completed a <span>JavaScript</span> bootcamp at <span>Northcoders</span>, where I strengthened my development skills and learned to apply complex computer science concepts to my work.</p>
+        <p>When I&apos;m not coding, you&apos;ll find me practicing <span>yoga</span> and <span>pilates</span>, <span>traveling</span> to discover new places and cuisines, or <span>volunteering</span> for causes I care about. </p>
         <p>Thanks for visiting my portfolio—let&apos;s connect!</p>
+      </section>
+      <img src="/assets/laptop-girl.png" alt="girl typing on a laptop"/>
       </section>
     );
   };

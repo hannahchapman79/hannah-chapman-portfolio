@@ -9,20 +9,16 @@ import FadeInSection from '../FadeInSection';
 const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(3),
     textAlign: 'center',
-    color: '#fff',
-    maxHeight: 120,
+    color: 'var(--offwhite)',
+    maxHeight: 140,
     maxWidth: 120,
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'center',
+    boxShadow: 'none',  
     backgroundColor: 'transparent',
-    borderRadius: '8px',
-    transition: 'transform 0.2s',
-    '&:hover': {
-        transform: 'scale(1.04)',
-    },
 }));
 
 const languageTechStack = [
@@ -47,7 +43,7 @@ const backendTechstack = [
     { id: 1, logo: '/assets/nodejs-logo.png', name: 'Node.js' },
     { id: 2, logo: '/assets/express-logo-white.png', name: 'Express' },
     { id: 3, logo: '/assets/psql-logo.png', name: 'PSQL' },
-    { id: 4, logo: '/assets/restapi-logo.png', name: 'RESTful API Design' },
+    { id: 4, logo: '/assets/restapi-logo.png', name: 'RESTful API' },
 ];
 
 const toolsTechstack = [
@@ -63,9 +59,9 @@ const TechStack = () => {
         <>
         <section className='tech-stack-section'>
             <FadeInSection>
-                <h1 className='developer-toolkit'>My Developer Toolkit</h1>
+                <h1 className='developer-toolkit'>My <span>Developer</span> Toolkit</h1>
             </FadeInSection>
-            <Grid container spacing={3} justifyContent="center">
+            <Grid container spacing={3} justifyContent="center" className="tech-stack-grid">
                 <FadeInSection>
                     <Box className='languages-box' >
                         <h1 style={{justifyItems: 'center'}}>Programming Languages:</h1>
