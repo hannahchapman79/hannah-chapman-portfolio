@@ -18,13 +18,14 @@ function ProjectCard(props) {
         <Card className="project-card">
             <Card.Body>
                 <Card.Img src={props.imgPath} alt="Project displayed on simulator"></Card.Img>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <Card.Title className="card-title">{props.title}</Card.Title>
+                <Card.Text className="card-description"
+                style={{ textAlign: "justify" }}>
                     {props.description}
                 </Card.Text>
                 
-                <Button variant="primary" href={props.ghLink} target="_blank">
-                    <BsGithub /> &nbsp;
+                <Button className="purple-button" variant="primary" href={props.ghLink} target="_blank">
+                    <BsGithub className="github-icon"/> GitHub&nbsp;
                 </Button>
 
                 {props.ghSecondaryLink && (
@@ -33,13 +34,13 @@ function ProjectCard(props) {
                         delay={{ show: 250, hide: 400 }}
                         overlay={renderTooltip()}
                     >
-                        <Button variant="primary" href={props.ghSecondaryLink} target="_blank">
-                            <BsGithub /> &nbsp;
+                        <Button className="purple-button"  variant="primary" href={props.ghSecondaryLink} target="_blank" style={{ marginLeft: "10px" }}>
+                            <BsGithub /> Backend&nbsp;
                         </Button>
                     </OverlayTrigger>
                 )}
 
-                <Button
+                <Button className="pink-button"
                     variant="primary"
                     href={props.demoLink}
                     target="_blank"
