@@ -1,33 +1,51 @@
 /* NAV */
 
-.nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8)!important; 
+  background-color: rgba(26, 31, 36, 0.8)!important;
   position: sticky;
   top: 0;
   z-index: 1000;
+  bottom: 8px
 }
 
 .nav-item {
-  color: azure; 
-  text-decoration: none;
+  position: relative;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   padding: 10px 20px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: var(--offwhite);
+  margin: 0;
 }
 
-.nav-item:hover {
-  color: white;
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px !important; 
+  height: 3px; 
+  width: 0;
+  background-color: rgba(204, 102, 255, 1);
+  transition: width 0.3s ease-in-out;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-brand {
+  color: var(--white) !important;
+  font-weight: 600;
+  font-size: 1.6rem !important;
+}
+
+.nav-link {
+  color: var(--offwhite) !important;
 }
 
 /* HOMEPAGE */
@@ -36,13 +54,13 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh !important;
   margin: 0 auto;
 }
 
 .intro-card {
   width: 100%;
-  max-width: 60vw;
+  max-width: 65vw;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -51,23 +69,37 @@ nav ul {
 }
 
 .hannah-icon {
-  max-width: 18vw;
+  max-width: 17vw;
+  margin-bottom: 30px !important;
 }
 
 .name-intro {
   font-size: 2.1rem;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--white);
 }
 
 .role-intro {
   font-size: 2.5rem;
   margin-top: 6px;
-  margin-bottom: 6px;
+  margin-bottom: 20px !important;
+  font-weight: 800 !important;
+  background: linear-gradient(
+    90deg, 
+    var(--lightpurple), 
+    rgba(255, 255, 255, 1)   
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .personal-profile-intro {
   font-size: 1.4rem;
-  font-weight: 100;
+  font-weight: 500 !important;
+  color: var(--offwhite);
+  margin-bottom: 10px;
 }
 
 .contact-button {
@@ -81,50 +113,74 @@ nav ul {
   padding-right: 8px;
 }
 
-/* SKILLS PAGE */
+/* ABOUT PAGE */
 
-.developer-toolkit {
-  font-size: 2.5rem;
-  margin: 40px;
+.about-page {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
-.languages-box {
-  max-width: 35vw;
-  margin-right: 30px;
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px; 
+  max-height: 80vh;
 }
 
-.tech-stack-section {
-  max-width: 90vw;
+.about-me-content img {
+  width: 500px;
+  height: 500px;
 }
 
-.backend-box:hover, 
-.frontend-box:hover, 
-.web-box:hover, 
-.tools-box:hover,
-.languages-box:hover {
-  box-shadow: 0px 5px 14px rgba(255, 255, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-}
-
-/* ABOUT ME PAGE */
-
-.about-me-section {
+.about-me-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 2rem;
   margin: 5rem auto;
-  max-width: 80vw;
+  max-width: 90%;
+}
+
+.about-me-text p {
+  font-size: 1.2rem;
+  font-weight: 500 !important;
+  color: var(--white);
+  line-height: 1.4;
+  word-spacing: 0.1rem;
+}
+
+.about-me-text span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color:rgba(204, 102, 255, 1)
 }
 
 .about-title {
-  font-size: 2.1rem;
-  color: azure;
-  font-weight: 600;
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
   margin-bottom: 1rem;
 }
+
+.about-title span {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    90deg, 
+    rgba(204, 102, 255, 1), 
+    rgba(255, 255, 255, 1)  
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 
 .about-content {
   font-size: 1.4rem;
@@ -139,13 +195,154 @@ nav ul {
   transition: color 0.3s ease;
 }
 
+/* TECH STACK */
+
+.developer-toolkit {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+
+.developer-toolkit span {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    90deg, 
+    rgba(204, 102, 255, 1), 
+    rgba(255, 255, 255, 1)   
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.languages-box {
+  max-width: 35vw;
+  margin-right: 30px;
+}
+
+.tech-stack-section {
+  max-width: 90vw;
+  margin-bottom: 3rem;
+}
+
+.tech-stack-grid h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: var(--offwhite);
+}
+
+.tech-stack-grid img {
+margin-bottom: 4px;
+  }
+
+.tech-stack-grid img:hover {
+transform: scale(1.05);
+}
+
+.github-contribution {
+  margin-bottom: 6rem;
+}
+
+.github-contribution h1 {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.github-contribution strong {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  background: linear-gradient(
+    90deg, 
+    rgba(204, 102, 255, 1), 
+    rgba(255, 255, 255, 1)   
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* PROJECTS PAGE */
+
+.project-heading {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-heading strong {
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    90deg, 
+    rgba(204, 102, 255, 1), 
+    rgba(255, 255, 255, 1)   
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.project-subheading {
+  color: var(--offwhite);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.project-section p {
+  color: var(--offwhite);
+}
+
+.card-title {
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+}
+
+.card-description {
+  margin-bottom: 1.5rem !important;
+  margin-top: 1rem !important;
+}
+
+.project-card {
+  background-color: var(--darkgrey)!important;
+  color: var(--offwhite) !important;
+}
+
+.project-card-item {
+  width: 40vw !important;
+  margin-bottom: 2rem;
+}
+
+.github-icon {
+  font-size: 1.2rem;
+}
+
+.pink-button {
+  background-color: var(--darkpink) !important;
+  border: var(--darkpink) !important;
+  max-width: 180px;
+}
 
 /* CV PAGE */
 
 .purple-button {
   background-color: #5a189a !important;
   border: #5a189a !important;
-  min-width: 180px;
+  max-width: 180px;
 }
 
 .purple-button:hover {

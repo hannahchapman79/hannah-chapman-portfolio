@@ -9,9 +9,10 @@ function Projects() {
                 <h1 className="project-heading">
                     My <strong>Projects </strong>
                 </h1>
-                <p style={{ color: "black" }}>
+                <p className="project-subheading">
                     Here are some recent projects I&apos;ve developed.
                 </p>
+                <section className="project-cards"> 
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={4} className="project-card-item">
                         <ProjectCard
@@ -38,7 +39,7 @@ function Projects() {
                         <ProjectCard
                             imgPath="/assets/ncnews.png"
                             title="NC News"
-                            description="A full-stack news application inspired by Reddit. The back-end API and database utilises Express and PSQL, while the front end, built with React, JavaScript, HTML, and CSS, allows users to explore articles by topic, upvote or downvote content, and add comments. This platform provides an interface for viewing, interacting with, and contributing to various news articles and discussions."
+                            description="A full-stack news application inspired by Reddit. The back-end API and database utilises Express and PSQL, while the front end, built with React, JavaScript, HTML, and CSS, allows users to explore articles by topic, upvote or downvote content, and add comments."
                             ghLink="https://github.com/hannahchapman79/nc-news"
                             ghSecondaryLink="https://github.com/hannahchapman79/be-nc-news"
                             demoLink="https://66b5de66c4712d2e55c90430--hdcnews.netlify.app/"
@@ -55,8 +56,10 @@ function Projects() {
                         />
                     </Col>
                 </Row>
+                </section>
             </Container>
         </Container>
+
     );
 }
 
