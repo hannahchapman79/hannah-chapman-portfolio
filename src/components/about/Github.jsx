@@ -32,7 +32,7 @@ function Github() {
         transformData={selectLastHalfYear}
         blockSize={18}
         blockMargin={15}
-        color="#CC66FF"
+        color="#4A90E2"
         fontSize={16}
       />
     </Row>

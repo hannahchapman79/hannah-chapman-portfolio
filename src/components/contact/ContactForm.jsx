@@ -22,7 +22,7 @@ function ContactForm() {
         <Form.Control as="textarea" placeholder="Your message" rows={5} />
       </Form.Group>
 
-      <Button variant="primary" type="submit" className='purple-button'>
+      <Button variant="primary" type="submit" className='outline-button'>
         Send
       </Button>
     </Form>

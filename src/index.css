@@ -3,14 +3,11 @@
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
-  --grey: #0D0E10;
-  --darkpurple: #612375;
-  --purple: #832e9f;
-  --lightpurple: #e3c2f2;
-  --darkpink: #832161;
-  --pink: #9d2774;
+  --darkgrey: #1A1F24;
+  --button: #4A90E2;
   --white: #FFFFFF;
   --offwhite: #E1E1E1;
+  --accent: #FFCC66;
 }
 
 body {
@@ -19,7 +16,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1A1F24 !important;
-  color: azure !important;
 }
 
 

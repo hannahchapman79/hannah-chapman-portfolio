@@ -17,7 +17,7 @@ function Cv() {
                         variant="primary"
                         href={cvPath}
                         target="_blank"
-                        className="purple-button"
+                        className="outline-button"
                         style={{ maxWidth: 250 }}
                     >
                         <AiOutlineDownload />

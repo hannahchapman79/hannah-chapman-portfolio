@@ -24,7 +24,7 @@ function ProjectCard(props) {
                     {props.description}
                 </Card.Text>
                 
-                <Button className="purple-button" variant="primary" href={props.ghLink} target="_blank">
+                <Button className="outline-button" variant="primary" href={props.ghLink} target="_blank">
                     <BsGithub className="github-icon"/> GitHub&nbsp;
                 </Button>
 
@@ -34,13 +34,13 @@ function ProjectCard(props) {
                         delay={{ show: 250, hide: 400 }}
                         overlay={renderTooltip()}
                     >
-                        <Button className="purple-button"  variant="primary" href={props.ghSecondaryLink} target="_blank" style={{ marginLeft: "10px" }}>
+                        <Button className="outline-button"  variant="primary" href={props.ghSecondaryLink} target="_blank" style={{ marginLeft: "10px" }}>
                             <BsGithub /> Backend&nbsp;
                         </Button>
                     </OverlayTrigger>
                 )}
 
-                <Button className="pink-button"
+                <Button className="outline-button"
                     variant="primary"
                     href={props.demoLink}
                     target="_blank"
