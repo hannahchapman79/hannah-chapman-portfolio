@@ -54,8 +54,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh !important;
+  min-height: 60vh !important;
   margin: 0 auto;
+  padding-bottom: 0;
 }
 
 .intro-card {
@@ -90,7 +91,7 @@
   font-size: 1.4rem;
   font-weight: 500 !important;
   color: var(--offwhite);
-  margin-bottom: 10px;
+  margin-bottom: 0 !important;
 }
 
 .contact-button {
@@ -104,9 +105,31 @@
   padding-right: 8px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.social-icons li {
+  margin: 0 10px; 
+}
+
 .home-icon {
   color: var(--button) !important;
   font-size: 2rem !important;
+}
+
+.home-icon:hover {
+  color: var(--button) !important;
+  transform: scale(1.1);
+}
+
+.homepage-content {
+  min-height: 85vh;
 }
 
 /* ABOUT PAGE */
