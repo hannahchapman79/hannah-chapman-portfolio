@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: 'rgba(26, 31, 36, 0.8)', padding: '10px 0', color: '#aaa', fontSize: '0.9rem' }}>
+    <footer className="footer" style={{ backgroundColor: 'rgba(26, 31, 36, 0.8)', padding: '10px 0', color: '#aaa', fontSize: '0.9rem' }}>
       <Container>
         <Row className="justify-content-between align-items-center">
           <Col md="auto" className="text-center">

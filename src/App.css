@@ -30,7 +30,7 @@
   bottom: 8px !important; 
   height: 3px; 
   width: 0;
-  background-color: rgba(204, 102, 255, 1);
+  background-color: var(--accent);
   transition: width 0.3s ease-in-out;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .navbar-brand {
-  color: var(--white) !important;
+  color: var(--accent) !important;
   font-weight: 600;
   font-size: 1.6rem !important;
 }
@@ -62,8 +62,6 @@
   width: 100%;
   max-width: 65vw;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 0 auto;
 }
@@ -84,15 +82,8 @@
   font-size: 2.5rem;
   margin-top: 6px;
   margin-bottom: 20px !important;
+  color: var(--accent) !important;
   font-weight: 800 !important;
-  background: linear-gradient(
-    90deg, 
-    var(--lightpurple), 
-    rgba(255, 255, 255, 1)   
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .personal-profile-intro {
@@ -103,7 +94,7 @@
 }
 
 .contact-button {
-  background-color: #64717d;
+  background-color: var(--button) !important;
   color: white;
   padding-right: 40px;
 }
@@ -111,6 +102,11 @@
 .intro-button-icon {
   transform: scale(1.6);
   padding-right: 8px;
+}
+
+.home-icon {
+  color: var(--button) !important;
+  font-size: 2rem !important;
 }
 
 /* ABOUT PAGE */
@@ -153,12 +149,6 @@
   word-spacing: 0.1rem;
 }
 
-.about-me-text span {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color:rgba(204, 102, 255, 1)
-}
-
 .about-title {
   font-size: 2.6rem;
   color: var(--white);
@@ -168,23 +158,14 @@
 
 .about-title span {
   font-size: 2.6rem;
-  color: var(--white);
+  color: var(--accent);
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    90deg, 
-    rgba(204, 102, 255, 1), 
-    rgba(255, 255, 255, 1)  
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
-
 
 .about-content {
   font-size: 1.4rem;
-  color: azure;
+  color: var(--offwhite);
   font-weight: 300;
   line-height: 1.6;
   max-width: 70vw;
@@ -206,17 +187,9 @@
 
 .developer-toolkit span {
   font-size: 2.6rem;
-  color: var(--white);
+  color: var(--accent);
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    90deg, 
-    rgba(204, 102, 255, 1), 
-    rgba(255, 255, 255, 1)   
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .languages-box {
@@ -257,16 +230,8 @@ transform: scale(1.05);
 
 .github-contribution strong {
   font-size: 2.6rem;
-  color: var(--white);
+  color: var(--accent);
   font-weight: 800;
-  background: linear-gradient(
-    90deg, 
-    rgba(204, 102, 255, 1), 
-    rgba(255, 255, 255, 1)   
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 /* PROJECTS PAGE */
@@ -281,23 +246,15 @@ transform: scale(1.05);
 
 .project-heading strong {
   font-size: 2.6rem;
-  color: var(--white);
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    90deg, 
-    rgba(204, 102, 255, 1), 
-    rgba(255, 255, 255, 1)   
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--accent);
 }
 
 .project-subheading {
   color: var(--offwhite);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
   margin-bottom: 3rem;
 }
 
@@ -331,42 +288,49 @@ transform: scale(1.05);
   font-size: 1.2rem;
 }
 
-.pink-button {
-  background-color: var(--darkpink) !important;
-  border: var(--darkpink) !important;
-  max-width: 180px;
+.outline-button {
+  background-color: transparent !important;
+  max-width: 180px !important;
+  border: 1.8px var(--button) solid !important;
 }
 
-/* CV PAGE */
-
-.purple-button {
-  background-color: #5a189a !important;
-  border: #5a189a !important;
-  max-width: 180px;
-}
-
-.purple-button:hover {
-  background-color: #7A21D4 !important;
-  color: #ffffff !important;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
+.outline-button:hover {
+  background-color: transparent !important;
+  max-width: 180px !important;
+  border: 1.8px var(--button) solid !important;
+  box-shadow: 0px 3px 5px rgba(74, 144, 226, 0.5);
 }
 
 /* CONTACT PAGE */
 
 .contact-intro {
-  font-size: 3.4rem;
+  font-size: 2.6rem;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  padding-top: 40px;
+}
+
+.contact-intro span {
+  font-size: 2.6rem;
+  color: var(--accent);
+  font-weight: 800;
+  margin-bottom: 1rem;
   padding-top: 40px;
 }
 
 .contact-message {
-  font-size: 1.2rem;
-  padding-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500 !important;
+  color: var(--offwhite);
+  margin-bottom: 10px;
 }
 
 .contact-form {
   max-width: 60vw; 
+  min-height: 65vh;
   margin: 0 auto;
+  background-color: var(--darkgrey) !important;
 }
 
 .contact-form input,
@@ -377,7 +341,7 @@ transform: scale(1.05);
   font-size: 1.1rem; 
   margin-bottom: 16px; 
   border-radius: 5px; 
-  color: azure;
+  color: var(--offwhite);
 }
 
 .contact-form button {
@@ -387,14 +351,21 @@ transform: scale(1.05);
 
 .contact-form input,
 .contact-form textarea {
-  background-color: rgba(0, 0, 0, 0.8)!important;
-  border: 1px solid azure;
+  background-color: var(--darkgrey)!important;
+  border: 1px solid var(--offwhite);
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: azure;
+  color: var(--offwhite);
   opacity: 1; 
+}
+
+/* FOOTER */ 
+
+.footer {
+  max-height: 5vh !important;
+  box-shadow: none !important;
 }
 
 /* RESPONSIVE STYLING */
