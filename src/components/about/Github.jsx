@@ -23,7 +23,7 @@ function Github() {
 
   return (
     <section className="github-contribution">
-    <Row style={{ justifyContent: "center", paddingTop: "40px" }}>
+    <Row style={{ justifyContent: "center"}}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong>Code</strong>
       </h1>

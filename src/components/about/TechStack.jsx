@@ -109,7 +109,6 @@ const TechStack = () => {
                     </Box>
                 </FadeInSection>
                 <FadeInSection>
-
                     <Box className='web-box' sx={{ flexGrow: 1 }}>
                         <h1>Web Technologies:</h1>
                         <Grid container spacing={2} justifyContent="center">

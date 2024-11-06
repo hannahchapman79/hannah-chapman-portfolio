@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "date-fns": "^2.30.0",
+    "make-dir": "^5.0.0",
     "pdfjs-dist": "^3.2.146",
     "react": "^18.3.1",
     "react-activity-calendar": "^2.7.1",

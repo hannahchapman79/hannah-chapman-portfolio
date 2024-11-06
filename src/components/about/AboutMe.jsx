@@ -10,7 +10,7 @@ const AboutMe = () => {
         <p>When I&apos;m not coding, you&apos;ll find me practicing <span>yoga</span> and <span>pilates</span>, <span>traveling</span> to discover new places and cuisines, or <span>volunteering</span> for causes I care about. </p>
         <p>Thanks for visiting my portfolio—let&apos;s connect!</p>
       </section>
-      <img src="/assets/laptop-girl.png" alt="girl typing on a laptop"/>
+      <img src="/assets/laptop-girl3.png" alt="girl typing on a laptop"/>
       </section>
     );
   };
