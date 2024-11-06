@@ -369,6 +369,7 @@
   min-height: 65vh;
   margin: 0 auto;
   background-color: var(--darkgrey) !important;
+  color: var(--offwhite) !important;
 }
 
 .contact-form input,
@@ -379,7 +380,7 @@
   font-size: 1.1rem;
   margin-bottom: 16px;
   border-radius: 5px;
-  color: var(--offwhite);
+  color: var(--offwhite) !important;
 }
 
 .contact-form button {
