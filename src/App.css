@@ -6,7 +6,7 @@
   justify-content: space-around;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(26, 31, 36, 0.8)!important;
+  background-color: rgba(26, 31, 36, 0.8) !important;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -27,8 +27,8 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 8px !important; 
-  height: 3px; 
+  bottom: 8px !important;
+  height: 3px;
   width: 0;
   background-color: var(--accent);
   transition: width 0.3s ease-in-out;
@@ -100,22 +100,17 @@
   padding-right: 40px;
 }
 
-.intro-button-icon {
-  transform: scale(1.6);
-  padding-right: 8px;
-}
-
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 .social-icons li {
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 .home-icon {
@@ -125,11 +120,6 @@
 
 .linkedin-icon {
   font-size: 2.8rem !important;
-}
-
-.home-icon:hover {
-  color: var(--button) !important;
-  transform: scale(1.1);
 }
 
 .homepage-content {
@@ -159,14 +149,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; 
-  gap: 20px; 
-  max-height: 80vh;
+  align-items: center;
+  gap: 20px;
 }
 
 .about-me-content img {
   width: 500px;
-  height: 500px;
+  height: auto;
 }
 
 .about-me-text {
@@ -214,6 +203,15 @@
   transition: color 0.3s ease;
 }
 
+/* CV */
+
+.cv-image {
+  max-width: 60vw;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
 /* TECH STACK */
 
 .developer-toolkit {
@@ -248,22 +246,24 @@
 }
 
 .tech-stack-grid img {
-margin-bottom: 4px;
-  }
+  margin-bottom: 4px;
+}
 
 .tech-stack-grid img:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .github-contribution {
   margin-bottom: 6rem;
+  margin-top: 7rem;
+  color: var(--offwhite);
 }
 
 .github-contribution h1 {
   font-size: 2.6rem;
   color: var(--white);
   font-weight: 800;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem !important;
 }
 
 .github-contribution strong {
@@ -313,7 +313,7 @@ transform: scale(1.05);
 }
 
 .project-card {
-  background-color: var(--darkgrey)!important;
+  background-color: var(--darkgrey) !important;
   color: var(--offwhite) !important;
 }
 
@@ -365,7 +365,7 @@ transform: scale(1.05);
 }
 
 .contact-form {
-  max-width: 60vw; 
+  max-width: 60vw;
   min-height: 65vh;
   margin: 0 auto;
   background-color: var(--darkgrey) !important;
@@ -374,41 +374,45 @@ transform: scale(1.05);
 .contact-form input,
 .contact-form textarea,
 .contact-form {
-  width: 100%; 
-  padding: 12px; 
-  font-size: 1.1rem; 
-  margin-bottom: 16px; 
-  border-radius: 5px; 
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  border-radius: 5px;
   color: var(--offwhite);
 }
 
 .contact-form button {
   margin-top: 20px;
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  background-color: var(--darkgrey)!important;
+  background-color: var(--darkgrey) !important;
   border: 1px solid var(--offwhite);
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: var(--offwhite);
-  opacity: 1; 
+  opacity: 1;
 }
 
-/* FOOTER */ 
+/* FOOTER */
 
 .footer {
-  max-height: 5vh !important;
+  min-height: 5vh;
+  height: auto; 
   box-shadow: none !important;
 }
 
 /* RESPONSIVE STYLING */
 
 @media (max-width: 768px) {
+
+  /* HOMEPAGE */
+
   .about-me-section {
     max-width: 90vw;
     padding: 1.5rem;
@@ -421,14 +425,221 @@ transform: scale(1.05);
   .about-content {
     font-size: 1rem;
   }
-  
-  .nav-bar {
-    max-width: 90vw;
+
+  .container {
+    padding: 0 1rem !important;
   }
-  
+
+  .nav-bar {
+    max-width: 90vw !important;
+    background-color: aquamarine !important;
+  }
+
   .intro-card {
     max-width: 90vw;
     padding: 15px;
   }
 
+  .hannah-icon {
+    max-width: 40vw;
+  }
+
+  .role-intro {
+    font-size: 2.2rem;
+  }
+
+    /* SOCIAL ICONS */
+
+  .social-icons {
+    margin-bottom: 2rem;
+  }
+
+  .lets-connect {
+    margin-top: 1rem;
+  }
+
+    /* ABOUT */
+
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    gap: 5px !important;
+  }
+
+  .about-me-text {
+    padding: 0rem;
+    text-align: center;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .about-me-content img {
+    width: 80vw;
+    margin-top: 0rem;
+    margin-bottom: 3rem !important;
+    height: auto;
+  }
+
+  .languages-box {
+    min-width: 88vw !important;
+    margin: 0;
+  }
+
+  .developer-toolkit {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .github-contribution {
+    margin-top: 4rem !important;
+  }
+
+  .project-card-item {
+    min-width: 88vw !important;
+  }
+
+  .project-card-item img {
+    transform: scale(1.1);
+  }
+
+  .project-card .outline-button {
+    margin-bottom: 1rem !important;
+  }
+
+    /* CV */
+
+  .cv-image {
+    max-width: 75vw;
+    height: auto;
+    padding-top: 1rem;
+  }
+
+    /* CONTACT */
+
+  .contact {
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  .contact-form {
+    max-width: 85%;
+  }
+
+}
+
+/* Tablet Styling */
+@media (min-width: 768px) and (max-width: 1180px) {
+
+  /* NAV */
+  .navbar {
+    padding: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+  }
+
+  /* HOMEPAGE */
+  .intro-card-div {
+    min-height: 40vh !important;
+    padding-top: 1rem !important;
+  }
+
+  .intro-card {
+    max-width: 80vw !important;
+    padding: 15px !important;
+
+  }
+
+  .hannah-icon {
+    max-width: 30vw !important;
+  }
+
+  .name-intro {
+    font-size: 2.2rem;
+  }
+
+  .role-intro {
+    font-size: 2.7rem;
+  }
+
+  .personal-profile-intro {
+    font-size: 1.7rem;
+  }
+
+  .lets-connect {
+    font-size: 1.7rem !important;
+    margin: 0.8rem !important;
+  }
+
+  /* SOCIAL ICONS */
+  .social-icons {
+    margin-bottom: 1.5rem;
+  }
+
+  /* ABOUT */
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    gap: 5px !important;
+  }
+
+  .about-me-text {
+    padding: 0rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0rem !important;
+  }
+
+  .about-me-content img {
+    width: 40vw;
+    margin-top: 2rem;
+    margin-bottom: 3rem !important;
+    height: auto;
+  }
+
+  /* TECH STACK */
+
+  .languages-box {
+    max-width: 90vw !important;
+  }
+
+  .developer-toolkit {
+    margin-top: 2rem !important;
+  }
+
+  /* PROJECTS PAGE */
+  .project-card-item {
+    width: 80vw !important;
+  }
+
+  /* CONTACT PAGE */
+  .contact-intro {
+    font-size: 3rem !important;
+  }
+
+  .contact-message {
+    font-size: 1.8rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .contact-form form {
+    margin-top: 2rem !important;
+    transform: scale(1.1) !important;
+  }
+
+  /* FOOTER */
+  .footer {
+    max-height: 8vh !important;
+  }
 }
