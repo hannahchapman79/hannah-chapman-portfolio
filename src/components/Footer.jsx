@@ -12,7 +12,7 @@ function Footer() {
             <Link to="/" className="mx-2 text-decoration-none" style={{ color: '#aaa' }}>Home</Link>
             <Link to="/about" className="mx-2 text-decoration-none" style={{ color: '#aaa' }}>About</Link>
             <Link to="/projects" className="mx-2 text-decoration-none" style={{ color: '#aaa' }}>Projects</Link>
-{/*             <Link to="/cv" className="mx-2 text-decoration-none" style={{ color: '#aaa' }}>CV</Link> */}
+            <Link to="/cv" className="mx-2 text-decoration-none" style={{ color: '#aaa' }}>CV</Link>
             <Link to="/contact" className="mx-2 text-decoration-none" style={{ color: '#aaa' }}>Contact</Link>
           </Col>
 

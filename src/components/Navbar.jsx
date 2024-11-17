@@ -29,11 +29,11 @@ const NavBar = () => {
               <BsFolder className="me-2" /> 
                 Projects</Link>
             </li>
-{/*             <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to="/cv">
               <BsFileText className="me-2" /> 
               CV</Link>
-            </li> */}
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">
               <BsEnvelope className="me-2" /> 
