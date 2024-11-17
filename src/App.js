@@ -7,12 +7,14 @@ import ProjectsGrid from "./components/projects/ProjectsGrid"
 import Contact from './components/contact/Contact';
 import Footer from './components/Footer';
 import CvImage from './components/Cv/CvImage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
   return (
     <>
       <NavBar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
