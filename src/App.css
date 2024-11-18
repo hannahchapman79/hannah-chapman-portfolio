@@ -408,23 +408,36 @@
   box-shadow: none !important;
 }
 
-/* RESPONSIVE STYLING */
+/* RESPONSIVE MOBILE STYLING */
 
 @media (max-width: 768px) {
 
   /* HOMEPAGE */
+
+  .name-intro {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .role-intro {
+    font-size: 1.5rem !important;
+  }
 
   .about-me-section {
     max-width: 90vw;
     padding: 1.5rem;
   }
 
-  .about-title {
-    font-size: 2rem;
+  .personal-profile-intro {
+    font-size: 1rem !important;
   }
 
-  .about-content {
-    font-size: 1rem;
+  .about-title, .about-title span {
+    font-size: 1.7rem !important
+  }
+
+  .about-me-content p {
+    font-size: 1rem !important;
   }
 
   .container {
@@ -433,7 +446,6 @@
 
   .nav-bar {
     max-width: 90vw !important;
-    background-color: aquamarine !important;
   }
 
   .intro-card {
@@ -457,6 +469,16 @@
 
   .lets-connect {
     margin-top: 1rem;
+    font-size: 1rem !important;
+  }
+
+  .home-icon {
+    color: var(--button) !important;
+    font-size: 1.5rem !important;
+  }
+  
+  .linkedin-icon {
+    font-size: 1.5rem !important;
   }
 
     /* ABOUT */
@@ -478,9 +500,9 @@
   }
 
   .about-me-content img {
-    width: 80vw;
+    width: 60vw !important;
     margin-top: 0rem;
-    margin-bottom: 3rem !important;
+    margin-bottom: 1rem !important;
     height: auto;
   }
 
@@ -489,13 +511,40 @@
     margin: 0;
   }
 
-  .developer-toolkit {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+  .developer-toolkit, .developer-toolkit span {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1.7rem !important;
+  }
+
+  .tech-stack-section h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .tech-stack-section p {
+    font-size: 0.9rem !important;
   }
 
   .github-contribution {
     margin-top: 4rem !important;
+  }
+  
+  .react-activity-calendar__count {
+    font-size: 0.8rem !important;
+    margin-right: 10px !important;
+  }
+
+  .react-activity-calendar__legend-colors {
+    font-size: 0.8rem !important;
+  }
+
+  .project-heading, .project-heading strong {
+    font-size: 1.7rem !important;
+  }
+
+  .project-subheading {
+    font-size: 1.2rem !important;
+    margin-bottom: 2rem !important;
   }
 
   .project-card-item {
@@ -507,7 +556,19 @@
   }
 
   .project-card .outline-button {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .card-title {
+    font-size: 1.2rem !important;
+  }
+
+  .card-description {
+    font-size: 0.8rem !important;
+  } 
+
+  .outline-button {
+    font-size: 0.8rem !important;
   }
 
     /* CV */
@@ -520,8 +581,17 @@
 
     /* CONTACT */
 
+
+    .contact-intro, .contact-intro span {
+      font-size: 1.7rem !important;
+    }
+
+    .contact-message{
+      font-size: 1rem !important;
+    }
+
   .contact {
-    max-width: 90%;
+    max-width: 85% !important;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -529,8 +599,24 @@
   }
 
   .contact-form {
-    max-width: 85%;
+    max-width: 90%;
   }
+
+  .contact-form input, textarea {
+    font-size: 0.8rem !important;
+  }
+
+  .footer p{
+font-size: 0.7rem !important;
+  }
+
+  .footer a{
+    font-size: 0.7rem !important;
+      }
+
+  .navbar a, p{
+    font-size: 1.3rem !important;
+      }
 
 }
 

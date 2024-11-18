@@ -25,7 +25,7 @@ function ProjectCard(props) {
                 </Card.Text>
                 
                 <Button className="outline-button" variant="primary" href={props.ghLink} target="_blank">
-                    <BsGithub className="github-icon"/> GitHub&nbsp;
+                    <BsGithub/> GitHub&nbsp;
                 </Button>
 
                 {props.ghSecondaryLink && (

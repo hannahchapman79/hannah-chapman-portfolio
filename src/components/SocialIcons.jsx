@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import GitHubIcon from '@mui/icons-material/GitHub';
-// import { FaLinkedin } from 'react-icons/fa';
 import { FiGithub } from "react-icons/fi";
 import { RiLinkedinBoxLine } from "react-icons/ri";
 import { MdMailOutline } from "react-icons/md";
