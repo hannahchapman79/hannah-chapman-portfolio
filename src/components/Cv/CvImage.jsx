@@ -25,10 +25,10 @@ function CvImage() {
                 <Row style={{ justifyContent: "center", padding: 20 }}>
                     <Carousel>
                         <Carousel.Item>
-                            <img className="cv-image" src="/assets/cv-page1.png" alt="Page 1 of CV" />
+                            <img className="cv-image" src="/assets/hannah-cv1.png" alt="Page 1 of CV" />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="cv-image" src="/assets/cv-page2.png" alt="Page 2 of CV" />
+                            <img className="cv-image" src="/assets/hannah-cv2.png" alt="Page 2 of CV" />
                         </Carousel.Item>
                     </Carousel>
 
