@@ -5,7 +5,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 function CvImage() {
 
-    const cvPath = "/assets/hannah-chapman-cv.pdf";
+    const cvPath = "/assets/hannah-chapman-cv2.pdf";
 
     return (
         <div>
