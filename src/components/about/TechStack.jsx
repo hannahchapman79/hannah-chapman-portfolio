@@ -36,7 +36,8 @@ const frontendTechstack = [
 const webTechstack = [
     { id: 1, logo: '/assets/html-logo.png', name: 'HTML' },
     { id: 2, logo: '/assets/css-logo.png', name: 'CSS' },
-    { id: 3, logo: '/assets/accessible-design-white.png', name: 'Accessible Design' },
+    { id: 3, logo: '/assets/mui-logo.png', name: 'MUI' },
+    { id: 4, logo: '/assets/accessible-design-white.png', name: 'Accessible Design' },
 ];
 
 const backendTechstack = [
@@ -44,7 +45,8 @@ const backendTechstack = [
     { id: 2, logo: '/assets/express-logo-white.png', name: 'Express' },
     { id: 3, logo: '/assets/psql-logo.png', name: 'PSQL' },
     { id: 4, logo: '/assets/mongodb-logo.png', name: 'Mongo DB' },
-    { id: 5, logo: '/assets/restapi-logo.png', name: 'RESTful API' },
+    { id: 5, logo: '/assets/jwt-logo.png', name: 'JWT' },
+    { id: 6, logo: '/assets/restapi-logo.png', name: 'RESTful API' },
 ];
 
 const toolsTechstack = [
