@@ -43,7 +43,8 @@ const backendTechstack = [
     { id: 1, logo: '/assets/nodejs-logo.png', name: 'Node.js' },
     { id: 2, logo: '/assets/express-logo-white.png', name: 'Express' },
     { id: 3, logo: '/assets/psql-logo.png', name: 'PSQL' },
-    { id: 4, logo: '/assets/restapi-logo.png', name: 'RESTful API' },
+    { id: 4, logo: '/assets/mongodb-logo.png', name: 'Mongo DB' },
+    { id: 5, logo: '/assets/restapi-logo.png', name: 'RESTful API' },
 ];
 
 const toolsTechstack = [
