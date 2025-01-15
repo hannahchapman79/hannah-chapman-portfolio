@@ -4,20 +4,14 @@ import { Row } from "react-bootstrap";
 
 function Github() {
 
-  const selectLastHalfYear = contributions => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
+  const selectSixMonths = contributions => {
+    const today = new Date();
+    const sixMonthsAgo = new Date(today);
+    sixMonthsAgo.setMonth(today.getMonth() - 6);
   
     return contributions.filter(activity => {
       const date = new Date(activity.date);
-      const monthOfDay = date.getMonth();
-  
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
+      return date >= sixMonthsAgo && date <= today;
     });
   };
 
@@ -29,11 +23,14 @@ function Github() {
       </h1>
       <GitHubCalendar
         username="hannahchapman79"
-        transformData={selectLastHalfYear}
+        transformData={selectSixMonths}
         blockSize={18}
         blockMargin={15}
         color="#4A90E2"
         fontSize={16}
+        labels={{
+          totalCount: '{{count}} contributions in the last 6 months',
+        }}
       />
     </Row>
     </section>
