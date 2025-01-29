@@ -50,11 +50,12 @@ const backendTechstack = [
 ];
 
 const toolsTechstack = [
-    { id: 1, logo: '/assets/git-logo.png', name: 'Git' },
-    { id: 2, logo: '/assets/jest-logo.png', name: 'Jest' },
-    { id: 3, logo: '/assets/netlify-logo.png', name: 'Netlify' },
-    { id: 4, logo: '/assets/supabase-logo.png', name: 'Supabase' },
-    { id: 5, logo: '/assets/google-api.png', name: 'Google API' },
+    { id: 1, logo: '/assets/aws-logo.png', name: 'AWS' },
+    { id: 2, logo: '/assets/git-logo.png', name: 'Git' },
+    { id: 3, logo: '/assets/jest-logo.png', name: 'Jest' },
+    { id: 4, logo: '/assets/netlify-logo.png', name: 'Netlify' },
+    { id: 5, logo: '/assets/supabase-logo.png', name: 'Supabase' },
+    { id: 6, logo: '/assets/google-api.png', name: 'Google API' },
 ];
 
 const TechStack = () => {
