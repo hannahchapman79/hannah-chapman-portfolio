@@ -208,9 +208,14 @@
 .cv-image {
   max-width: 60vw;
   height: auto;
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
+.cv-section {
+  margin-top: 1rem;
+}
+
 
 /* TECH STACK */
 
