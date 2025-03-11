@@ -23,21 +23,21 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const languageTechStack = [
     { id: 1, logo: '/assets/javascript-logo.png', name: 'JavaScript' },
-    { id: 2, logo: '/assets/dart-logo.png', name: 'Dart' },
     { id: 3, logo: '/assets/typescript-logo.png', name: 'TypeScript' },
 ];
 
 const frontendTechstack = [
     { id: 1, logo: '/assets/react-logo.png', name: 'React js/native' },
-    { id: 2, logo: '/assets/flutter-logo.png', name: 'Flutter' },
+    { id: 2, logo: '/assets/nextjs-logo.png', name: 'Next.js' },
     { id: 3, logo: '/assets/expogo-logo.png', name: 'Expo Go' },
 ];
 
 const webTechstack = [
     { id: 1, logo: '/assets/html-logo.png', name: 'HTML' },
     { id: 2, logo: '/assets/css-logo.png', name: 'CSS' },
-    { id: 3, logo: '/assets/mui-logo.png', name: 'MUI' },
-    { id: 4, logo: '/assets/accessible-design-white.png', name: 'Accessible Design' },
+    { id: 3, logo: '/assets/tailwind-logo.png', name: 'Tailwind' },
+    { id: 4, logo: '/assets/mui-logo.png', name: 'MUI' },
+    { id: 5, logo: '/assets/accessible-design-white.png', name: 'Accessible Design' },
 ];
 
 const backendTechstack = [
