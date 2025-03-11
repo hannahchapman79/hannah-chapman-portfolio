@@ -14,11 +14,21 @@ function Projects() {
                 </p>
                 <section className="project-cards"> 
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                <Col md={4} className="project-card-item">
+                        <ProjectCard
+                            imgPath="/assets/together-events.png"
+                            title="Together Events"
+                            description="A full-stack community events platform built for Tech Returners. Users can browse, sign up for, and add events to Google Calendar, while admins can create and manage events. Built with Next.js, TypeScript, Node.js, and MongoDB, the app features secure JWT authentication and role-based access."
+                            ghLink="https://github.com/hannahchapman79/TogetherEvents-FE"
+                            ghSecondaryLink="https://github.com/hannahchapman79/TogetherEvents-BE"
+                            demoLink="https://together-events.vercel.app/"
+                        />
+                    </Col>
                     <Col md={4} className="project-card-item">
                         <ProjectCard
                             imgPath="/assets/clearskies.png"
                             title="Clear Skies Weather App"
-                            description="Clear Skies is a mobile app built with Flutter and Dart, designed to strengthen OOP skills. It fetches real-time weather data for any city, dynamically adjusting colours and icons based on current conditions for an engaging user experience."
+                            description="Clear Skies is a mobile app built with Flutter and Dart, to enhance my Object-Oriented Programming skills. It fetches real-time weather data for any city, dynamically adjusting colours and Cupertino icons based on current conditions for an engaging, iOS-like user experience."
                             ghLink="https://github.com/hannahchapman79/Clear-Skies-Weather-App"
                             demoLink="https://drive.google.com/file/d/1ae1AzyVsOoVHljPtHj8L2Hk7fjC0QbeS/view?usp=sharing"
                         />

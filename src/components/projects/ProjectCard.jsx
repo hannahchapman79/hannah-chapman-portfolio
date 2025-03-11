@@ -46,7 +46,7 @@ function ProjectCard(props) {
                     target="_blank"
                     style={{ marginLeft: "10px" }}
                 >
-                    <BsPlayCircle /> &nbsp; Demo
+                    <BsPlayCircle /> &nbsp; View
                 </Button>
             </Card.Body>
         </Card>
