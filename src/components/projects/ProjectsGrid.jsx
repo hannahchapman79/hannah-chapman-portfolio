@@ -65,16 +65,6 @@ function Projects() {
                             demoLink="https://hdcnews.netlify.app/"
                         />
                     </Col>
-
-                    <Col md={4} className="project-card-item">
-                        <ProjectCard
-                            imgPath="/assets/catify.png"
-                            title="Catify"
-                            description="A fun, responsive front-end app built through pair programming, using React, JavaScript, HTML, and CSS to fetch random cat photos via an external API. Users can select the number of images and filter by specific breeds, making it easy to explore various cat breeds."
-                            ghLink="https://github.com/hannahchapman79/Catify "
-                            demoLink="https://hannahs-catify-app.netlify.app/"
-                        />
-                    </Col>
                 </Row>
                 </section>
             </Container>
