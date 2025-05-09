@@ -16,6 +16,16 @@ function Projects() {
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                 <Col md={4} className="project-card-item">
                         <ProjectCard
+                            imgPath="/assets/bali-guide.png"
+                            title="Bali Guide"
+                            description="A smarter way to explore Bali: this itinerary generator combines Meta&apos;s Llama 4 with lived-in personal recommendations to deliver travel plans you won&apos;t find on Google. Built with TypeScript, Node.js and MongoDB."
+                            ghLink="https://github.com/hannahchapman79/BaliGuide"
+                            ghSecondaryLink="https://github.com/hannahchapman79/BaliGuide-backend"
+                            demoLink="https://baliguide.vercel.app/"
+                        />
+                    </Col>
+                <Col md={4} className="project-card-item">
+                        <ProjectCard
                             imgPath="/assets/together-events.png"
                             title="Together Events"
                             description="A full-stack community events platform built for Tech Returners. Users can browse, sign up for, and add events to Google Calendar, while admins can create and manage events. Built with Next.js, TypeScript, Node.js, and MongoDB, the app features secure JWT authentication and role-based access."
